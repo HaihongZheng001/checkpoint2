@@ -1,26 +1,37 @@
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
 body{
+	background-color: white;
 	margin:1%;
 	padding:1%;
 	font-size:150%;
 }
 
+main {
+	display: block;
+	margin-top: 25px;
+}
 /*Make the h1 heading bigger with a bold font*/
 h1{
+	display: block;
 	font-size: 2em; 
 	font-weight: bold;
+	margin: 50px 0;
 }
 
 
 .active{
-	background: yellow;
     text-transform: uppercase;
 	text-align: center;
+	border: solid 5px yellow;
+	font-size: 120%;
+
+	
 }
 
 .active a{
-	text-decoration: none;;
+	text-decoration: none;
+
 }
 
 /*Style the images*/
@@ -29,14 +40,14 @@ img{
     width: 200px;
     border: 2px dashed black;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 2px;
     margin: 10px;
 }
 
 img:hover {
 
-	background-color: black;
-	border: 3px solid black;
+	background-color: rgb(133, 216, 255);
+	border: 3px solid rgb(16, 12, 236);
 	height: 300px;
     width: 300px;
 
@@ -44,6 +55,9 @@ img:hover {
 }
 
 /*Make the h2 heading match h1*/
+
+
+
 h2{
 	font-size: 2em; 
 	font-weight: bold;
@@ -51,34 +65,60 @@ h2{
 
 /*Improve the spacing for paragraphs AND headings*/
 p, h1, h2 {
-    padding: 10px;
+	display: block;
+    padding: 20px;
+	color: black;
+}
+
+a, p {
+	color: black;
 }
 
 /*Add borders around the main components and some
 space too*/
-header, nav, main, h1, footer{
-	border: 2px solid lightgray; 
-	margin: 10px 0;
+header, nav {
+	/* border: 2px solid rgb(175, 64, 64); */
+	margin: 30px 0;
+	font-size: 30px;
 }
 
 
 /*Change the styling for all of the list 
 items in the nav section*/
-nav li{
-	background-color: rgb(233, 233, 233);
-	padding:10px;
-	width:25%;
-	border:1px solid black; 
-	display: inline-block;
-	width: 20%;
+
+nav {
+	background-color:lightblue;
 }
 
-.footer {
-	padding: 100px;
-	margin: 300px;
+nav li{
+	/* background-color: rgb(233, 233, 233);*/
+	padding:20px;
+	width:25%;
+	/* border:1px solid rgb(148, 148, 144);*/
+	display: inline-block;
+	text-align: center;
+	width: 20%;
+	margin: 20px;
+}
+
+footer {
+	margin-top: 200px;
+}
+
+a.footerlink {
+	display:block;
+	padding-left: 20px;
+	color:blue;
+	
+}
+
+.skip {
+	display: block;
+	color: blue;
+	margin-bottom: 50px;
 }
 
 
 /*Added this so the links stay the same color*/
-a:visited{color:#0000FF}
+nav a:visited{color: rgba(0, 0, 0, 0.849)}
 
