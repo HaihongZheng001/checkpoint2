@@ -44,13 +44,21 @@ img{
     margin: 10px;
 }
 
+/* 
 img:hover {
 
 	background-color: rgb(133, 216, 255);
 	border: 3px solid rgb(16, 12, 236);
 	height: 300px;
     width: 300px;
+}
+*/
 
+img:nth-child(even):hover{
+	background-color: rgb(133, 216, 255);
+	border: 3px solid rgb(16, 12, 236);
+	height: 300px;
+    width: 300px;
 
 }
 
@@ -101,9 +109,7 @@ nav li{
 	margin: 20px;
 }
 
-footer {
-	margin-top: 200px;
-}
+
 
 a.footerlink {
 	display:block;
@@ -118,6 +124,15 @@ a.footerlink {
 	margin-bottom: 50px;
 }
 
+footer {
+	font-size: 70%;
+	background-color: rgb(235, 235, 235);
+	display: block;
+	margin-top: 100px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+
+}
 
 /*Added this so the links stay the same color*/
 nav a:visited{color: rgba(0, 0, 0, 0.849)}
